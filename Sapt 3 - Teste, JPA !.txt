@@ -1,0 +1,57 @@
+Sonar: http://blog.baudson.de/blog/running-a-local-sonarqube-with-docker
+
+injectMocks
+inject (teste)
+mock(clasa) => apartine de clasa Mockito (Mockito doc)
+
+@Inject -> dep. inj.
+@InjectMocks -> doar in clase de testare.
+
+Obs:
+1a.when thenReturn = typesafe   doReturn nu
+1b.when... thenReturn se apeleaza metoda, la doReturn nu apeleaza. (when thenReturn = mai bun pt noi);
+
+@Provider la ApplicationExceptionMapper -> ca sa stie / se uite cand o exceptie neprinsa apare si sa o returneze ca response.
+
+JPA:
+https://www.tutorialspoint.com/jpa/ 
+http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html 
+ 
+adnotarile de class, field, relationships:
+https://www.objectdb.com/api/java/jpa/annotations 
+Class: Cacheable, Entity, MappedSuperclass  
+Id, Version, Transient, EnumType, Temporal
+Relationships: toate
+Value Generation: GeneratedValue, Generationype, SequenceGenerator
+
+
+
+
+TODO
+x proxy pattern + factory pattern
+x generationType's
+x in person: complete name.
+x scripturi sql creare DB.
+
+1 DDL
+2 <persistence-unit name="todos" transaction-type="RESOURCE_LOCAL">
+3.1 Ce e un EntityManagerFactory
+3.2 Ce e un Entity Manager
+3.3 Ce e o sesiune (DB)
+3.4 Ce e o tranzactie si unde se foloseste.
+3.5 Ce este un Query (Object din JPA)
+3.6 https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html
+	Create(tipuri Query)                
+	fush, persist, merge, remove.
+	getTransaction
+3.7 Scripturi DB. + 1 rand date.
+3.8 Reflection
+
+
+
+
+
+Intrebari: 
+nu ar fi mai smart safolosim Set<Person> in Company?
+
+ 

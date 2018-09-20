@@ -1,0 +1,101 @@
+Glassfish:
+cd in bin.
+asadmin
+start-domain domainName
+stop-domain
+
+Good read
+https://www.tutorialspoint.com/restful/restful_resources.htm
+
+
+working guide for deployment:
+https://medium.com/@jamsesso/starting-out-with-jersey-apache-tomcat-using-intellij-6338d93ffd40
+
+Jersey&JSON
+https://www.mkyong.com/webservices/jax-rs/json-example-with-jersey-jackson/
+more complex:
+http://zetcode.com/jersey/json/
+
+Complex responses:
+https://dennis-xlc.gitbooks.io/restful-java-with-jax-rs-2-0-en/cn/part1/chapter7/complex_responses.html
+
+Custom Exception Handler:
+https://howtodoinjava.com/resteasy/exception-handling-in-jax-rs-resteasy-with-exceptionmapper/
+
+
+INTREBARI:
+trebe @ValidateRequest ??    https://samaxes.com/2013/01/beanvalidation-with-jaxrs-in-javaee6/
+
+TASK
+
+INTEGRAM 2 APLICATII. UN FEL DE MICROSERVICII DEPLOYENITE PE FLASSFISH
+2 portiune: 1 user 2 servicii. -> abonamente.
+
+returneaza si response status
+daca primesc 200 continui, altfel intrerup
+
+toDoTest in tutorial!
+
+
+
+[?9/?12/?2018 4:41 PM]  Andra Barata:  
+alex salajan id=1
+serviciu romtelecom
+serviciu romtelecom premium
+id = 1 
+postman:
+ 
+[?9/?12/?2018 4:42 PM]  Andra Barata:  
+/rest/services/update/1/1
+/rest/services/update/1?firstname=alex&lastname=salajan
+ 
+[?9/?12/?2018 4:44 PM]  Andra Barata:  
+callul merge catre apl. de service
+apl. service -> apl. user cu firstname si lastname
+apl. user -> id-ul userului
+ 
+[?9/?12/?2018 4:45 PM]  Andra Barata:  
+apl. service adauga in db user=1 si serviciu=1
+ 
+[?9/?12/?2018 4:46 PM]  Andra Barata:  
+din user sa fie validarea
+ 
+[?9/?12/?2018 4:48 PM]  Andra Barata:  
+tabela de join sa nu aiba cam de id
+tabela de join are pk pe (user_id, service_id)
+apl. service la update -> native query
+ 
+[?9/?12/?2018 4:50 PM]  Andra Barata:  
+http://www.vogella.com/tutorials/REST/article.html
+ 
+[?9/?12/?2018 5:02 PM]  Andra Barata:  
+ private static URI getBaseURI() {
+        return UriBuilder.fromUri(
+                "http://localhost:8080/com.vogella.jersey.jaxb").build();
+    } 
+ 
+[?9/?12/?2018 5:04 PM]  Andra Barata:  
+ private static URI getBaseURI(String firstName, String lastName) {
+        return UriBuilder.fromUri(
+                "http://localhost:8080/com.vogella.jersey.jaxb?fistname=" + firstName + "&lastname=" + lastName).build();
+    }  
+ 
+
+
+
+
+WCF Training
+webHosting
+selfHosting
+
+probleme posibile:
+au ramas in web.xml servlet-name la fel.
+auto increment in constructor Service
+consumes si produces la impl
+static final session factory!
+modificat din List in List<Subscription> ca tipul pt results
+
+probleme grave:
+Serverul are probleme, nu ma lasa sa il pornesc din consola decat din intellij si merge foarte greu deployul
+
+To Do: Tabel nou

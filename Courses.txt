@@ -1,0 +1,30 @@
+Angular:
+https://www.udemy.com/the-complete-guide-to-angular-2/?siteID=JVFxdTr9V80-9VGh6oKJ22_o9zXzJ08T_w&LSNPUBID=JVFxdTr9V80
+
+JavaScript:
+https://javascript30.com/           acces aici: https://courses.wesbos.com/account               
+https://www.udemy.com/the-complete-javascript-course/?siteID=EXclnL5BfX4-eqdaQj0IfoKbtylGarnaLw&LSNPUBID=EXclnL5BfX4
+https://www.udemy.com/understand-javascript/              !!!
+about closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+Carti JS:
+You don't know JS
+https://xiaoguo.net/~books/Program/You_Dont_Know_JS_Up_and_Going.pdf
+
+CSS Grid:
+https://cssgrid.io/
+
+
+Patterns !important!
+Factory: https://www.oreilly.com/library/view/head-first-design/0596007124/ch04.html
+Proxy: https://www.safaribooksonline.com/library/view/head-first-design/0596007124/ch11.html
+
+
+Testing !important!
+!! Pragmatic Unit Testing Java 8: https://www.safaribooksonline.com/library/view/pragmatic-unit-testing/9781680500769/f_0015.html
+https://www.journaldev.com/21219/testng-tutorial
+
+JPA
+https://www.tutorialspoint.com/jpa/jpa_introduction.htm
+http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html
+Annotations: https://www.objectdb.com/api/java/jpa/annotations

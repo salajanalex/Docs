@@ -1,0 +1,28 @@
+
+AngularJS Core: Modules, Built-in Directives, Controllers, Views, Templates, Services and Custom Directives: 
+ - https://www.pluralsight.com/courses/angularjs-fundamentals  ---> 12h
+ - https://www.pluralsight.com/courses/angular-big-picture ---> 3h
+
+ 
+Directives in depth:
+ - https://www.pluralsight.com/courses/angularjs-directive-fundamentals ---> 7h
+ 
+Services in depth: 
+ - https://www.pluralsight.com/courses/angularjs-services-in-depth ---> 6h
+ 
+
+ 
+Angular 1.5+ specific: ~12h
+ 
+ - https://angular.io/tutorial
+ - https://www.codeproject.com/Articles/1212533/Build-an-Angular-component-An-AngularJS-tutorial
+ - https://thinkster.io/angularjs-es6-tutorial
+
+
+ 
+Integrating with 3rd party apis: ~1h
+
+Chrome Tool techniques (performance tab specifically): ~1h
+ 
+Build a small web app that makes use of the above topics: depends on the application requirements
+
