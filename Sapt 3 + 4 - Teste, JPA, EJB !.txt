@@ -56,34 +56,19 @@ x scripturi sql creare DB.
 
 5.1 EJB !!! https://docs.oracle.com/javaee/6/tutorial/doc/gipmb.html
 5.2 Resources  
+
+6.1 Idempotency
+6.2 Contexte la 
+6.3 Context (stateless, stateful)
+
 69 CRONOS
 
-x 6.1 modificare delete dupa ID -> query with named parameter.
-x 6.4 modificare findById ca in companyResourceTest.
-6.2 conform cu un 1 din companie, sa adaugi o persoana nou + persoana cu id./company/1/addPerson
-								/company/1/addPersonById/2
-6.3 la adaugare si persoana si adresa noua -> la testu de addPerson  
-6.4
-	o 1. get all companies
-	o 2. find company
-	o 3. create company (fara persoane)
-	o 4. update company (fara persoane)  ? sa o creeze noua daca nu o gaseste sau nu?
-	o 5. add new person to company 
-	o 6. add existing person to company
-	o 7. add person with address
-	o 8. get all persons
-	o 9. find a person
-	o 10. delete a person with adress
-	11. update a person (with address)
-	12. update a person
-	o 13. update the addrress of an existing person 
 
-6.5 ce era extended type
-6.6 ce este in web.xml
 
-Intrebari:  
-Nu merge pe add person cu si fara adresa in functie de structura JSON-unui?
+Intrebari: 
 
+Am pus .Silent la @RunWith ca sa nu mai crape. 
+De ce le da alea 2 la ultimele teste?
 
 
  

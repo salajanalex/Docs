@@ -1,3 +1,6 @@
+Deploying fullstack app:
+https://medium.freecodecamp.org/lessons-learned-from-deploying-my-first-full-stack-web-application-34f94ec0a286
+
 Angular:
 https://www.udemy.com/the-complete-guide-to-angular-2/?siteID=JVFxdTr9V80-9VGh6oKJ22_o9zXzJ08T_w&LSNPUBID=JVFxdTr9V80
 

@@ -1,0 +1,156 @@
+Peer programming
+
+Jackson; Object Mapper; Resource Config.
+
+Taskuri:
+1 Testcoverege in sonar
+
+1. get all companies 			OK                         
+2. find company        			OK                                              
+3. create company (fara persoane)   	OK									
+4. update company (fara persoane)	OK								
+5. add new person to company            OK                         
+6. add existing person to company       OK                              
+7. add person with address              OK                               
+8. get all persons			OK                                         
+9. find a person                        OK                                
+10. delete a person with adress         OK                                
+11. update a person                     OK                                 
+12. update addrress of existing person  OK 
+
+modificare stringuri din queryuri. 	OK
+asserturi la queryuri -> cu captor.	OK (in CompanyControllerTest)
+
+Validare Fullname la add		OK
+namedQueries (Query hints)		OK				
+JPA 2 nivele de caching. care?  http://www.kubrynski.com/2017/04/understanding-jpa-l1-caching.html 	OK
+		1-persistence context, 2-? cautam	OK
+
+La @Test de delete, assert pe parametrii trimisi cu captor.		OK
+
+
+Variante Caching:
+https://stackoverflow.com/questions/5832415/entitymanager-refresh
+	refresh(entity)
+	entityManager.getEntityManagerFactory().getCache().evictAll();   -varianta pt chaching problem?
+	@Cache(coordinationType=CacheCoordinationType.INVALIDATE_CHANGED_OBJECTS)
+	em.createNamedQuery("SomeEntity.SomeNamedQuery").setHint(QueryHints.REFRESH, true).getResultList();
+
+agregare/compositie -> pe cascade type
+Injectare cu reflexion: mock(); facem controlleru accesibil. nu avem getter si setteri pe atributele din controller -> cu reflexion setam; il facem set accessible
+	http://www.java2s.com/Code/Java/Reflection/Setprivatefieldvalue.htm    -> asta face inject mocks
+
+termeni:
+get put post delete idempotency	
+mutation of scope.	
+
+Migrare DB:
+Adreasa n - 1 Persoana
+Owner: Adresa
+Relatie bidirectionala.
+Modificare tabele -> in Persoana -> camp idaddress
+Modificare cod -> in adresa -> List<Person>
+
+
+Task: 
+1 remove person din companie								OK
+2 ce face spy-u cu exemple si in ce context, cand nu se recomanda.			OK
+3 modificare teste liste: cand avem liste, testam si pe emty, null, multe elemente.	OK (1/2)
+4 JavaDoc.										OK
+5 Docker, pornim ca admin: https://github.com/docker/for-win/issues/1679 		OK
+
+6. idempotenta. daca fac post cu aceleasi date, fara side effect. IDEMPOTENCY		OK
+7. delete company.									OK
+8. scripturi de migrare pe DB								OK + validare unicitate
+9. Add person With Address/ without address						OK
+10. validari DB not null, unique.							OK - fara not null
+11. Nu merge add Person with addres, le adauga pe ambele dar nu se creza legatuar	OK
+
+12. in Adresa totul prin queryParam. 							OK
+13. Validare DB si validare Clase model. 						OK
+14. Teste care sa corupa validarea.							OK
+			
+16. named queries pe Person								OK
+18. teste controllere si repositoryuri.							OK
+				
+
+EU:
+refacut teste si pe restu 2								OK
+bean-discovery-mode  - variante (bean.xml)
+Test pe deletu bun									OK
+
+Intrebari:
+
+
+
+SAPTAMANA 7.
+
+TASKS:
+1. script migrare: alter tables, update, etc.						OK
+2. javadoc la teste.									
+3. Swagger: https://swagger.io/tools/swagger-ui/					OK
+4. reinstare Docker + acrivam hiper VI-https://github.com/docker/toolbox/issues/636	OK
+5. Ce e Docker si ce face. + abstractizare (containere -> pod-uri)			OK
+6. diferenta intre server pool si container pool.			
+7. 1 server normal si un payara care ruleaza in container. Diferenta.
+8. Plugin management si dependency management
+9. 1 server normal si un payara care ruleaza in container. Diferenta.
+10. EJB? CDI?	
+11. IN JDK:
+	JVISUALVM – jucam.
+	JAVA MISSION CONTROLL
+	J CONSOLE
+12.
+						
+
+Ramase:
+17. Exceptii corecte pe getall Person -> controller (lista goala si null)					
+19. de refacut put-urile intre adresa-persoana	
+20. modificare responsuri pt ce nu e OK.
+21. Modificari Cu DTO -> 
+	Person: Update Address Of Person -> adauga adresa noua fara persoane in ea.
+	Person: Update Person with or without address -> not working
+
+
+
+Pasi swagger:
+Modificare pe resurse. (undone pt ca eroare pe a doua varianta)
+?? adaugat in POM plugin nou.
+Dependinta nou in pom
+am copiat in webapp tot ce e in dist
+am adaugat jacskin media in POM ca sa nu avem eroare in swaggerApp.java
+am adaugat in pom dependinta pt stereotype.Component (din SwaggerApp).
+Modificare pe resurse
+Modificare pe basePath in SwaggerApp
+
+
+SwaggerApp - modificare serResourcePackage()
+
+TOTAL COMMANDER
+
+pe docker -> incercam enable experimental features
+
+
+
+
+ctrl shift r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

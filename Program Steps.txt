@@ -1,0 +1,8 @@
+Sonar: 
+http://blog.baudson.de/blog/running-a-local-sonarqube-with-docker
+dupa restart stergem containerul si imaginea si o cream din nou cu cele 2 comenzi din site.
+docker rm sonarqube   	- stergem containerul
+docker rmi sonarqube	- stergem imaginea
+docker ps -a		- verificam containerele
+docker images -a	- verificam imaginile
+
